@@ -1,0 +1,40 @@
+.back-button {
+position: relative;
+width: 50px;
+left: 10px;
+top: 10px;
+border: 1px solid white;
+color: purple;
+background-color: #CCC;
+text-shadow: 0px 0px 0px
+}
+
+.head-bar {
+	color: white;
+	text-align: center;
+	height: 45px;
+	width: 100%;
+	background-color: #e6ccff;
+	text-shadow: 1px 1px 1px #000000
+}
+
+.info {
+  text-align: center;
+  font-size: 80px;
+  position: relative;
+  top: -50px;
+  
+}
+
+.foods {
+  float: left;
+}
+.places {
+  float: right;
+}
+.prefs {
+  font-size: 25px;
+  position: relative;
+  padding-top: 0px;
+  top: -100px;
+}
