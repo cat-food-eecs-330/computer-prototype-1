@@ -65,8 +65,27 @@ body {
 
 .places {
   float: left;
+  width: 100%;
 }
 
 ul {
 	font-weight: normal;
+}
+
+.block-button {
+  display: block;
+  width: 30%;
+  height: 10%;
+  border: none;
+  margin-top: 200px;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 28px;
+  font-size: 40px;
+  cursor: pointer;
+  text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
