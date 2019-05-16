@@ -1,0 +1,74 @@
+<html>
+  <header>
+    <title>hour</title>
+    <link rel="stylesheet" type="text/css" href="p6.css" />
+  </header>
+  <body>
+    <div>
+      <a href="page1.html">
+        <img
+          src="img/back-button.png"
+          alt="Back Button"
+          class="profile-button"
+        />
+      </a>
+    </div>
+    <p class="page-name">Locates and Hours</p>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">
+        Select a Dining Hall
+      </button>
+      <div id="myDropdown" class="dropdown-content">
+        <input
+          type="text"
+          placeholder="Search.."
+          id="myInput"
+          onkeyup="filterFunction()"
+        />
+        <a onclick="click1()" href="#Allison">Allison</a>
+        <a href="#Asiana">Asiana Foodville</a>
+        <a href="#Deli">Deli</a>
+        <a href="#contact">Dunkin Donuts</a>
+        <a href="#custom">Foster Walk East</a>
+        <a href="#support">Foster Walk West</a>
+        <a href="#tools">Market</a>
+        <a href="#tools">MOD</a>
+        <a href="#tools">Sargent</a>
+        <a href="#tools">Starbucks</a>
+      </div>
+    </div>
+    <img src="img/hour.png" alt="Hour" class="pic" />
+    <div id="0" style="display:none">
+      <a href="menu.html">
+        <img src="img/Allison.png" class="pic" />
+      </a>
+    </div>
+
+    <script>
+      /* When the user clicks on the button,
+            toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      function click1() {
+        document.getElementById("0").style.display = "";
+      }
+
+      function filterFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("myDropdown");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
