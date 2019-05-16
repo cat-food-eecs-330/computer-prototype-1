@@ -1,40 +1,72 @@
-.back-button {
-position: relative;
-width: 50px;
-left: 10px;
-top: 10px;
-border: 1px solid white;
-color: purple;
-background-color: #CCC;
-text-shadow: 0px 0px 0px
+body {
+    font-family: "Arial";
 }
 
+
 .head-bar {
+	box-sizing: border-box;
+	position: relative;
 	color: white;
 	text-align: center;
-	height: 45px;
+	height: 10%;
 	width: 100%;
 	background-color: #e6ccff;
-	text-shadow: 1px 1px 1px #000000
+	text-shadow: 1px 1px 1px #000000;
+	font-size: 30px;
+	padding-top: 10px;
+}
+
+.back-button {
+	position: relative;
+	width: 20%;
+	height: 50%;
+	left: 2%;
+	top: 20%;
+	border: 1px solid white;
+	color: purple;
+	background-color: #CCC;
+	text-shadow: 0px 0px 0px;
+	float: left;
+}
+
+.back-button > i {
+	font-size: 90px;
+}
+
+.header-text {
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+
+	margin-top: 2%;
+	margin-left: 12%;
+
+	font-size: 90px;
 }
 
 .info {
   text-align: center;
-  font-size: 80px;
+  font-size: 120px;
   position: relative;
   top: -50px;
-  
 }
 
-.foods {
-  float: left;
-}
-.places {
-  float: right;
-}
 .prefs {
-  font-size: 25px;
+  font-size: 50px;
+  font-weight: bold;
   position: relative;
   padding-top: 0px;
   top: -100px;
+}
+.foods {
+  float: left;
+  width: 100%;
+}
+
+.places {
+  float: left;
+}
+
+ul {
+	font-weight: normal;
 }
