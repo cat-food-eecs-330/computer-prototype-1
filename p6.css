@@ -31,3 +31,7 @@
   cursor: pointer;
   text-align: center;
 }
+#date {
+  text-align: center;
+  font-size: 24px;
+}
