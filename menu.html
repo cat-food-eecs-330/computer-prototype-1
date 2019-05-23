@@ -1,27 +1,29 @@
 <html>
-	<header>
-    <title>Menus</title>
-    <link rel="stylesheet" type="text/css" href="p6.css" />
-  </header>
-  <body>
-  	<div>
-  		<div class="profile-button">
-        <a href="profile.html">
-          <img src="profileIcon.png" alt="Profile Button" />
-        </a>
-      </div>
-      <iframe src="https://www.dineoncampus.com/northwestern/whats-on-the-menu" width="100%" height="100%">
-      </iframe>
-      This code just puts the straight up NU dining hall menus webpage into
-      the screen, as if you accessed it on Safari or something
-      <!--<p id="date"></p>
-      <script>
-      	var n = new Date();
-      	var y = n.getFullYear();
-      	var m = n.getMonth() + 1;
-      	var d = n.getDate();
-      	document.getElementById("date").innerHTML = "Today's Sargent Hall menu -- " + m + "/" + d + "/" + y;
-      </script>-->
-  	</div>
-  </body>
+<header>
+	<title>Menus</title>
+	<link rel="stylesheet" type="text/css" href="menu.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="login.js"></script>
+</header>
+<body>
+	<div>
+		<div class="head-bar">
+			<div class="back-button" onclick="window.location.href='main_page.html'"><i class="material-icons">arrow_back</i></div>
+			<div class="header-text">Cat Food</div>
+		</div>
+
+		<iframe src="https://www.dineoncampus.com/northwestern/whats-on-the-menu" width="100%" height="100%">
+		</iframe>
+		This code just puts the straight up NU dining hall menus webpage into
+		the screen, as if you accessed it on Safari or something
+		<!--<p id="date"></p>
+		<script>
+		var n = new Date();
+		var y = n.getFullYear();
+		var m = n.getMonth() + 1;
+		var d = n.getDate();
+		document.getElementById("date").innerHTML = "Today's Sargent Hall menu -- " + m + "/" + d + "/" + y;
+	</script>-->
+</div>
+</body>
 </html>
