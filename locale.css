@@ -1,0 +1,184 @@
+body {
+    font-family: "Arial";
+}
+
+.head-bar {
+	box-sizing: border-box;
+	position: relative;
+	color: white;
+	text-align: center;
+	height: 10%;
+	width: 100%;
+	background-color: #e6ccff;
+	text-shadow: 1px 1px 1px #000000;
+	font-size: 30px;
+	padding-top: 10px;
+}
+
+.back-button {
+	position: relative;
+	width: 20%;
+	height: 50%;
+	left: 2%;
+	top: 20%;
+	border: 1px solid white;
+	color: purple;
+	background-color: #CCC;
+	text-shadow: 0px 0px 0px;
+	float: left;
+}
+
+.back-button > i {
+	font-size: 90px;
+}
+
+.header-text {
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+
+	margin-top: 2%;
+	margin-left: 12%;
+
+	font-size: 90px;
+}
+
+.page-name {
+  color: blueviolet;
+  font-size: 100px;
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.vertical-menu {
+  width: 100%;
+  height: 70%;
+  overflow-y: auto;
+  font-size: 50px;
+  background-color: #eee;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.list_item {
+    width: 100%;
+    height: 10%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ccc;
+}
+
+.dropbtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 16px;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 37%;
+  margin-bottom: 2%;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #3e8e41;
+}
+
+#myInput {
+  border-box: box-sizing;
+  background-image: url("searchicon.png");
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 38px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {
+  outline: 3px solid #ddd;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 23%;
+  margin-top: 0px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+  font-size: 25px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+
+
+
+
+.list_item {
+    width: 100%;
+    height: 24%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ccc;
+}
+
+.list_item img {
+    width: 30%;
+    background-color: white;
+    float: left;
+}
+
+#add-food {
+    width: 100%;
+    height: 12%;
+}
+
+#add-food img {
+    width: 15%;
+    margin-left: 7%;
+    background-color: #eee;
+}
+
+.food_name {
+    float: left;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+
+
+
+
+
+#heart {
+    width: 10%;
+    background: none;
+    margin-top: 10%;
+}

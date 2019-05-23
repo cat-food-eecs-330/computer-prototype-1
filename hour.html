@@ -1,6 +1,6 @@
 <html>
 <header>
-    <title>hour</title>
+    <title>Hour</title>
     <link rel="stylesheet" type="text/css" href="hour.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="hour.js"></script>
@@ -13,31 +13,27 @@
     </div>
 
     <p class="page-name">Locales and Hours</p>
-    <div class="dropdown">
-        <button onclick="showDrpDwn()" class="dropbtn">
-            Select a Dining Hall
-        </button>
-        <div id="myDropdown" class="dropdown-content">
-            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"</input>
-            <a onclick="click0()" href="#Allison">Allison</a>
-            <a href="#Asiana">Asiana Foodville</a>
-            <a href="#Deli">Deli</a>
-            <a href="#contact">Dunkin Donuts</a>
-            <a href="#custom">Foster Walk East</a>
-            <a href="#support">Foster Walk West</a>
-            <a href="#tools">Market</a>
-            <a href="#tools">MOD</a>
-            <a href="#tools">Sargent</a>
-            <a href="#tools">Starbucks</a>
-        </div>
-    </div>
 
-    <img src="img/hour.png" alt="Hour" class="pic" />
+    <div class="vertical-menu">
+        <a href="plex.html"><div class="list_item">
+            <div class="locale_name">Plex</div>
+            <div class="open">Open</div>
+        </div></a>
 
-    <div id="0" style="display:none">
-        <a href="menu.html">
-            <img src="img/Allison.png" class="pic" />
-        </a>
+        <a href="#"><div class="list_item">
+            <div class="locale_name">Sargent</div>
+            <div class="open">Open</div>
+        </div></a>
+
+        <a href="#"><div class="list_item">
+            <div class="locale_name">Allison</div>
+            <div class="closed">Closed</div>
+        </div></a>
+
+        <a href="#"><div class="list_item">
+            <div class="locale_name">Hinman</div>
+            <div class="closed">Closed</div>
+        </div></a>
     </div>
 
 </body>

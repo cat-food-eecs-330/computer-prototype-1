@@ -106,11 +106,6 @@ a {
   background-color: #ccc;
 }
 
-.vertical-menu a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
 .list_item {
     width: 100%;
     height: 24%;
