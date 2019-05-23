@@ -62,6 +62,7 @@ function buildPrefList() {
         list_item_a.innerHTML = `
         <div class="list_item" id="add-food">
             <img src="img/add.png"></img>
+            <div class="food_name">Add Favorite Food</div>
         </div>
         `;
 
@@ -81,8 +82,8 @@ function getUserPrefs() {
 
 function init() {
     display_name()
-    localStorage.removeItem("Adam_prefs")
-    localStorage.removeItem("Eve_prefs")
+    //localStorage.removeItem("Adam_prefs")
+    //localStorage.removeItem("Eve_prefs")
     if (localStorage.Adam_prefs == undefined) {
         localStorage.Adam_prefs = JSON.stringify(Adam_prefs)
     }
