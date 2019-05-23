@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>search</title>
+    <link rel="stylesheet" type="text/css" href="search.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <script src="search.js"></script>
+  </head>
+  <body>
+    <div>
+      <div class="head-bar">
+        <div
+          class="back-button"
+          onclick="window.location.href='main_page.html'"
+        >
+          <i class="material-icons">arrow_back</i>
+        </div>
+        <div class="header-text">Search for food</div>
+      </div>
+    </div>
+    <div class="dropdown">
+            
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"</input>
+                <i onclick="click0()" id="search-button"class="material-icons">search</i>
+            </div>
+        </div>
+    </div>
+    <div id="0" style="display:none">
+            <div class="card">
+                    <img src="img/meatball.jpg" alt="Meatball" style="width:100%;">
+                    <div class="container">
+                      <h1><b>Meatball</b></h1> 
+                      <h2>Now is available in Sargent.</h2> 
+                    </div>
+            </div>
+            <div class="card">
+                    <img src="img/meatball-spaghetti.jpg" alt="Meatball" style="width:100%;">
+                    <div class="container">
+                      <h1><b>Meatball Spaghetti</b></h1> 
+                      <h2>Now is available in Allison.</h2> 
+                    </div>
+            </div>
+                 
+                  
+    </div>
+
+   
+  </body>
+</html>
