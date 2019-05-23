@@ -1,0 +1,143 @@
+body {
+    font-family: "Arial";
+}
+
+
+.head-bar {
+    box-sizing: border-box;
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    background-color: #e6ccff;
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+.back-button {
+    position: relative;
+    width: 20%;
+    height: 50%;
+    left: 2%;
+    top: 20%;
+    border: 1px solid white;
+    color: purple;
+    background-color: #CCC;
+    text-shadow: 0px 0px 0px;
+    float: left;
+}
+
+.back-button > i {
+    font-size: 90px;
+}
+
+.header-text {
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+
+    margin-top: 2%;
+    margin-left: 12%;
+
+    font-size: 90px;
+}
+
+#info {
+    text-align: center;
+    font-size: 100px;
+    position: relative;
+    float: left;
+    top: -40px;
+}
+
+.prefs {
+    font-size: 60px;
+    font-weight: bold;
+    position: relative;
+    padding-top: 0px;
+    top: -100px;
+}
+.foods {
+    float: left;
+    width: 100%;
+}
+
+ul {
+    font-weight: normal;
+}
+
+.block-button {
+    display: block;
+    width: 20%;
+    height: 7%;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 28px;
+    font-size: 40px;
+    cursor: pointer;
+    text-align: center;
+    float: right;
+    margin-top: 6%;
+    margin-right: 4%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.vertical-menu {
+  width: 100%;
+  height: 70%;
+  overflow-y: auto;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.list_item {
+    width: 100%;
+    height: 24%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ccc;
+}
+
+.list_item img {
+    width: 30%;
+    background-color: white;
+    float: left;
+}
+
+#add-food {
+    width: 100%;
+    height: 12%;
+}
+
+#add-food img {
+    width: 15%;
+    margin-left: 7%;
+    background-color: #eee;
+}
+
+.food_name {
+    float: left;
+    margin-top: 3%;
+    margin-left: 2%;
+}

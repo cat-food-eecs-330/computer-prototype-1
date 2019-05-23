@@ -2,7 +2,6 @@ body {
     font-family: "Arial";
 }
 
-
 .head-bar {
 	box-sizing: border-box;
 	position: relative;
@@ -42,50 +41,4 @@ body {
 	margin-left: 12%;
 
 	font-size: 90px;
-}
-
-.info {
-  text-align: center;
-  font-size: 120px;
-  position: relative;
-  top: -50px;
-}
-
-.prefs {
-  font-size: 50px;
-  font-weight: bold;
-  position: relative;
-  padding-top: 0px;
-  top: -100px;
-}
-.foods {
-  float: left;
-  width: 100%;
-}
-
-.places {
-  float: left;
-  width: 100%;
-}
-
-ul {
-	font-weight: normal;
-}
-
-.block-button {
-  display: block;
-  width: 30%;
-  height: 10%;
-  border: none;
-  margin-top: 200px;
-  background-color: #4caf50;
-  color: white;
-  padding: 14px 28px;
-  font-size: 40px;
-  cursor: pointer;
-  text-align: center;
-}
-
-a {
-    text-decoration: none;
 }

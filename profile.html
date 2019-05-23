@@ -1,40 +1,34 @@
 <html>
 <head>
     <title>Cat Food</title>
-    <link rel="stylesheet" type="text/css" href="prof.css"/>
+    <link rel="stylesheet" type="text/css" href="profile.css"</link>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="profile.js"></script>
 </head>
 
 <body>
     <div class="head-bar">
-        <div class="back-button" onclick="window.location.href='Page1.html'"><i class="material-icons" >arrow_back</i></div>
+        <div class="back-button" onclick="window.location.href='main_page.html'"><i class="material-icons" >arrow_back</i></div>
         <div class="header-text">My Profile</div>
     </div>
-    <div class="info">
-        <p> Adam Smith </p>
-    </div>
 
-    <div class="prefs">
-        <div class="foods">
-            <p> Favorite Foods </p>
-            <ul>
-                <li>Spaghetti</li>
-                <li>Sloppy Joe</li>
-            </ul>
-
-        </div>
-
-        <div class="places">
-            <p> Favorite Dining Locations</p>
-            <ul>
-                <li>Sargent</li>
-                <li>Allison</li>
-            </ul>
-        </div>
+    <div id="info">
     </div>
 
     <a href="login.html"><button class="block-button">Log out</button></a>
 
+    <div class="prefs">
+        <div class="foods vertical-menu" id="PrefList">
+            <p> Favorite Foods </p>
+
+        </div>
+
+    </div>
+
 </body>
 
+<script>
+    init()
+    buildPrefList();
+</script>
 </html>
