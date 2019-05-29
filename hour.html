@@ -2,13 +2,13 @@
 <header>
     <title>Hour</title>
     <link rel="stylesheet" type="text/css" href="hour.css" />
+    <link rel="stylesheet" type="text/css" href="common.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="hour.js"></script>
 </header>
 <body>
-
+    <div class="head-bar-spacer"></div>
     <div class="head-bar">
-        <div class="back-button" onclick="window.location.href='main_page.html'"><i class="material-icons">arrow_back</i></div>
         <div class="header-text">Cat Food</div>
     </div>
 
@@ -18,22 +18,44 @@
         <a href="plex.html"><div class="list_item">
             <div class="locale_name">Plex</div>
             <div class="open">Open</div>
+            <div class="hours">7:00AM - 12:00AM</div>
         </div></a>
 
         <a href="#"><div class="list_item">
             <div class="locale_name">Sargent</div>
             <div class="open">Open</div>
+            <div class="hours">7:00AM - 11:30PM</div>
         </div></a>
 
         <a href="#"><div class="list_item">
             <div class="locale_name">Allison</div>
             <div class="closed">Closed</div>
+            <div class="hours">7:00AM - 8:00PM</div>
         </div></a>
 
         <a href="#"><div class="list_item">
             <div class="locale_name">Hinman</div>
             <div class="closed">Closed</div>
+            <div class="hours">7:00AM - 8:00PM</div>
         </div></a>
+    </div>
+
+    <div class="navigation-bar">
+
+        <div class="navi-button" onclick="location.href='hour.html'">
+            <img src="img/menu.png" alt="Search"></img>
+            <div class="navi-button-text">Hours/Menus</div>
+        </div>
+
+        <div class="navi-button" onclick="location.href='food_search.html'">
+            <img src="img/search.png" alt="Meatball"></img>
+            <div class="navi-button-text">Search food</div>
+        </div>
+
+        <div class="navi-button" onclick="location.href='profile.html'">
+            <img src="img/profileIcon.png" alt="Profile"></img>
+            <div class="navi-button-text">Profile</div>
+        </div>
     </div>
 
 </body>

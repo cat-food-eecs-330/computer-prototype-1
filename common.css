@@ -1,0 +1,94 @@
+body {
+  font-family: "Arial";
+}
+
+.head-bar-spacer {
+    box-sizing: border-box;
+    position: relative;
+    height: 10%;
+    width: 100%
+}
+
+.head-bar {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  color: white;
+  text-align: center;
+  height: 10%;
+  width: 100%;
+  background-color: #e6ccff;
+  text-shadow: 1px 1px 1px #000000;
+  font-size: 30px;
+  padding-top: 10px;
+}
+
+.back-button {
+  position: relative;
+  width: 20%;
+  height: 50%;
+  left: 2%;
+  top: 20%;
+  border: 1px solid white;
+  color: purple;
+  background-color: #ccc;
+  text-shadow: 0px 0px 0px;
+  float: left;
+}
+
+.back-button > i {
+  font-size: 90px;
+}
+
+.header-text {
+  box-sizing: border-box;
+  position: relative;
+
+  margin-top: 2%;
+  text-align: center;
+
+  font-size: 90px;
+}
+
+.page-name {
+  color: blueviolet;
+  font-size: 100px;
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navigation-bar {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    text-align: center;
+    height: 10%;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #e6ccff;
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 30px;
+}
+
+.navi-button {
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+
+    margin-left: 12%;
+
+    width: 180px;
+    height: 160px;
+}
+
+.navi-button img {
+    width: 65%;
+}
+
+.navi-button-text {
+    color: black;
+}

@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>search</title>
+    <link rel="stylesheet" type="text/css" href="search.css" />
+    <link rel="stylesheet" type="text/css" href="common.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="foods.js"></script>
+    <script src="search.js"></script>
+</head>
+<body>
+    <div class="head-bar-spacer"></div>
+    <div class="head-bar">
+        <div class="header-text">Cat Food</div>
+    </div>
+
+    <p class="page-name">Search for food</p>
+
+    <div class="dropdown">
+        <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()"</input>
+            <i onclick="click0()" id="search-button"class="material-icons">search</i>
+        </div>
+    </div>
+
+    <input id="CB1" type="checkbox" name="option1" value="Vegan" onclick="click1()"><label for="CB1">Vegan</label></br></input>
+    <input id="CB2" type="checkbox" name="opt2" value="Vegetarian" onclick="click2()"><label for="CB2">Vegetarian</label></br></input>
+    <input id="CB3" type="checkbox" name="opt4" value="Dairy Free"><label for="CB3">Dairy Free</label></br></input>
+
+    <div id="0" style="display:none">
+        <div class="card" id="meatball">
+            <img src="img/meatball.jpg" alt="Meatball" style="width:100%;">
+            <div class="container">
+                <h1><b>Meatball</b></h1>
+                <h2>Now is available in Sargent.</h2>
+            </div>
+        </div>
+        <div class="card" id="mspag">
+            <img src="img/meatball-spaghetti.jpg" alt="Meatball" style="width:100%;">
+            <div class="container">
+                <h1><b>Meatball Spaghetti</b></h1>
+                <h2>Now is available in Allison.</h2>
+            </div>
+        </div>
+        <div class="card" id="spag">
+            <img src="img/no-meatball-spaghetti.jpg" alt="Meatball" style="width:100%;">
+            <div class="container">
+                <h1><b>Spaghetti</b></h1>
+                <h2>Now is available in Allison.</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="navigation-bar">
+
+        <div class="navi-button" onclick="location.href='hour.html'">
+            <img src="img/menu.png" alt="Search"></img>
+            <div class="navi-button-text">Hours/Menus</div>
+        </div>
+
+        <div class="navi-button" onclick="location.href='food_search.html'">
+            <img src="img/search.png" alt="Meatball"></img>
+            <div class="navi-button-text">Search food</div>
+        </div>
+
+        <div class="navi-button" onclick="location.href='profile.html'">
+            <img src="img/profileIcon.png" alt="Profile"></img>
+            <div class="navi-button-text">Profile</div>
+        </div>
+    </div>
+
+
+</body>
+</html>

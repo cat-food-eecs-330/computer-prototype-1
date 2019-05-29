@@ -1,0 +1,167 @@
+#search_bar {
+  border-box: box-sizing;
+  background-image: url("img/searchicon.png");
+  background-position: 20px 20px;
+  background-repeat: no-repeat;
+  font-size: 50px;
+  padding: 14px 20px 12px 100px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-top: 1%;
+  margin-left: 6%;
+
+  display: block;
+  float: left;
+}
+
+#search_bar:focus {
+  outline: 3px solid #ddd;
+}
+#search-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 60px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+  float: left;
+  margin-right: 5%;
+}
+
+/* Customize the label (the container) */
+.filters {
+  display: block;
+  position: relative;
+  padding-left: 7%;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 50px;
+  user-select: none;
+
+  float: left;
+  margin-right: 2%;
+}
+
+/* Hide the browser's default checkbox */
+.filters input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 60px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.filters:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.filters input:checked ~ .checkmark {
+  background-color: #4caf50;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.filters input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.filters .checkmark:after {
+  left: 26%;
+  top: 1%;
+  width: 40%;
+  height: 80%;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.vertical-menu {
+    width: 100%;
+    height: 60%;
+    overflow-y: auto;
+    font-size: 50px;
+    background-color: #eee;
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc;
+}
+
+.list_item {
+    width: 99%;
+    height: 30%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #ccc;
+}
+
+.list_item img {
+    width: 30%;
+    background-color: white;
+    float: left;
+}
+
+#add-food {
+    width: 100%;
+    height: 12%;
+}
+
+#add-food img {
+    width: 15%;
+    margin-left: 7%;
+    background-color: #eee;
+}
+
+.food_name {
+    float: left;
+    margin-top: 3%;
+    margin-left: 2%;
+    width: 40%;
+}
+
+
+#heart {
+    width: 10%;
+    background: none;
+    margin-top: 10%;
+}

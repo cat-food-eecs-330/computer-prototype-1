@@ -1,0 +1,83 @@
+<html>
+<header>
+    <title>Food search</title>
+    <link rel="stylesheet" type="text/css" href="common.css" />
+    <link rel="stylesheet" type="text/css" href="food_search.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="foods.js"></script>
+    <script src="food_search.js"></script>
+</header>
+<body>
+    <div class="head-bar-spacer"></div>
+    <div class="head-bar">
+        <div class="header-text">Cat Food</div>
+    </div>
+
+    <p class="page-name">Search for food</p>
+
+    <div class="dropdown">
+        <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="search_bar" onkeyup="buildFoodsList()"</input>
+            <i onclick="click0()" id="search-button"class="material-icons">search</i>
+        </div>
+    </div>
+
+    <label class="filters">Vegan
+        <input type="checkbox" id="vegan" onclick="buildFoodsList()">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="filters">Vegetarian
+        <input type="checkbox" id="vegetarian" onclick="buildFoodsList()">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="filters">Dairy-Free
+        <input type="checkbox" id="no-dairy" onclick="buildFoodsList()">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="filters">Pasta
+        <input type="checkbox" id="pasta" onclick="buildFoodsList()">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="filters">Meaty
+        <input type="checkbox" id="meat" onclick="buildFoodsList()">
+        <span class="checkmark"></span>
+    </label>
+
+    <label class="filters">Dessert
+        <input type="checkbox" id="dessert" onclick="buildFoodsList()">
+        <span class="checkmark"></span>
+    </label>
+
+    <div class="vertical-menu" id="foods_list">
+
+    </div>
+
+
+
+
+    <div class="navigation-bar">
+
+        <div class="navi-button" onclick="location.href='hour.html'">
+            <img src="img/menu.png" alt="Search"></img>
+            <div class="navi-button-text">Hours/Menus</div>
+        </div>
+
+        <div class="navi-button" onclick="location.href='food_search.html'">
+            <img src="img/search.png" alt="Meatball"></img>
+            <div class="navi-button-text">Search food</div>
+        </div>
+
+        <div class="navi-button" onclick="location.href='profile.html'">
+            <img src="img/profileIcon.png" alt="Profile"></img>
+            <div class="navi-button-text">Profile</div>
+        </div>
+    </div>
+</body>
+<script>
+    buildFoodsList()
+</script>
+</html>

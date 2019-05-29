@@ -2,15 +2,19 @@
 <head>
     <title>Cat Food</title>
     <link rel="stylesheet" type="text/css" href="profile.css"</link>
+    <link rel="stylesheet" type="text/css" href="common.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="foods.js"></script>
     <script src="profile.js"></script>
 </head>
 
 <body>
+    <div class="head-bar-spacer"></div>
     <div class="head-bar">
-        <div class="back-button" onclick="window.location.href='main_page.html'"><i class="material-icons" >arrow_back</i></div>
-        <div class="header-text">My Profile</div>
+        <div class="header-text">Cat Food</div>
     </div>
+
+    <p class="page-name">My profile</p>
 
     <div id="info">
     </div>
@@ -18,13 +22,30 @@
     <a href="login.html"><button class="block-button">Log out</button></a>
 
     <div class="prefs">
+        <div id="favorites_header">Favorite Foods</div>
         <div class="foods vertical-menu" id="PrefList">
-            <p> Favorite Foods </p>
 
         </div>
 
     </div>
 
+    <div class="navigation-bar">
+
+        <div class="navi-button" onclick="location.href='hour.html'">
+            <img src="img/menu.png" alt="Search"></img>
+            <div class="navi-button-text">Hours/Menus</div>
+        </div>
+
+        <div class="navi-button" onclick="location.href='food_search.html'">
+            <img src="img/search.png" alt="Meatball"></img>
+            <div class="navi-button-text">Search food</div>
+        </div>
+
+        <div class="navi-button" onclick="location.href='profile.html'">
+            <img src="img/profileIcon.png" alt="Profile"></img>
+            <div class="navi-button-text">Profile</div>
+        </div>
+    </div>
 </body>
 
 <script>
