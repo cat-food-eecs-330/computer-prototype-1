@@ -1,12 +1,14 @@
 <html>
 <header>
     <title>Plex</title>
+    <link rel="stylesheet" type="text/css" href="common.css" />
     <link rel="stylesheet" type="text/css" href="locale.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="foods.js"></script>
     <script src="locale.js"></script>
 </header>
 <body>
-
+    <div class="head-bar-spacer"></div>
     <div class="head-bar">
         <div class="back-button" onclick="window.location.href='hour.html'"><i class="material-icons">arrow_back</i></div>
         <div class="header-text">Cat Food</div>
@@ -14,50 +16,34 @@
 
     <p class="page-name">Plex</p>
 
-    <button onclick="showDrpDwn()" class="dropbtn">
-        5/22/2019
-    </button>
+    <input type="date" id="calendar" class="dropbtn" required="required"
+       value="2019-05-29">
+    </input>
 
-    <div class="vertical-menu">
-        <div class="list_item">
-            <img src="img/heart_0.png" onclick="toggle_fav()" id="heart"></img>
-            <img src="img/pizza.png"></img>
-            <div class="food_name">Pizza</div>
-        </div>
+    <div class="vertical-menu" id="menu">
 
-        <div class="list_item">
-            <img src="img/heart_0.png" onclick="toggle_fav()" id="heart"></img>
-            <img src="img/beef.png"></img>
-            <div class="food_name">Beef</div>
-        </div>
-
-        <div class="list_item">
-            <img src="img/heart_0.png" onclick="toggle_fav()" id="heart"></img>
-            <img src="img/taco.png"></img>
-            <div class="food_name">Taco</div>
-        </div>
-
-        <div class="list_item">
-            <img src="img/heart_0.png" onclick="toggle_fav()" id="heart"></img>
-            <img src="img/pizza.png"></img>
-            <div class="food_name">Pizza</div>
-        </div>
-
-        <div class="list_item">
-            <img src="img/heart_0.png" onclick="toggle_fav()" id="heart"></img>
-            <img src="img/burger.png"></img>
-            <div class="food_name">Burger</div>
-        </div>
-
-        <div class="list_item">
-            <img src="img/heart_0.png" onclick="toggle_fav()" id="heart"></img>
-            <img src="img/cookies.png"></img>
-            <div class="food_name">Cookies</div>
-        </div>
     </div>
 
+    <div class="navigation-bar">
+
+        <div class="navi-button" onclick="location.href='hour.html'">
+            <img src="img/menu.png" alt="Search"></img>
+            <div class="navi-button-text">Hours/Menus</div>
+        </div>
+
+        <div class="navi-button" onclick="location.href='food_search.html'">
+            <img src="img/search.png" alt="Meatball"></img>
+            <div class="navi-button-text">Search food</div>
+        </div>
+
+        <div class="navi-button" onclick="location.href='profile.html'">
+            <img src="img/profileIcon.png" alt="Profile"></img>
+            <div class="navi-button-text">Profile</div>
+        </div>
+    </div>
 </body>
 <script>
-    showLast()
+init()
+buildMenuList([0, 3, 4, 5, 8])
 </script>
 </html>
