@@ -60,14 +60,12 @@ function toggle_fav(id) {
     var prefs
     if (localStorage.user == "Adam") {
         prefs = JSON.parse(localStorage.Adam_prefs)
-        console.log("Prefs before change:", prefs)
         if (prefs.includes(id)) {
             del_elem(prefs, id)
         }
         else {
             prefs.push(id)
         }
-        console.log("Prefs after change:", prefs)
         localStorage.Adam_prefs = JSON.stringify(prefs)
     }
     if (localStorage.user == "Eve") {
@@ -81,23 +79,6 @@ function toggle_fav(id) {
         localStorage.Eve_prefs = JSON.stringify(prefs)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
