@@ -7,6 +7,7 @@ a {
   height: 70%;
   overflow-y: auto;
   font-size: 50px;
+  margin-bottom: 0px;
 }
 
 .vertical-menu a {
@@ -61,4 +62,77 @@ a {
     float: right;
     margin-right: 3%;
     color: red;
+}
+
+.reminders {
+  position: relative;
+  top: -570px;
+  color: blueviolet;
+  font-size: 100px;
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-rem {
+  position: relative;
+  top: -600px;
+  color: black;
+  font-size: 60px;
+  margin-top: 15px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 4px;
+  float: left;
+  width: 100%
+}
+
+.dropdown-content {
+  display: None;
+  position: relative;
+  float: right;
+  top: -75px;
+  margin-right: 5px;
+  line-height: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#input-location {
+  border: 2px solid green;
+  font-size: 60px;
+  margin-right: 0px;
+  padding-right: 0px;
+  width: 600px;
+}
+
+#input-time {
+  border: 2px solid green;
+  font-size: 60px;
+  margin-right: 0px;
+  padding-right: 0px;
+  width: 600px
+}
+
+#time-zone {
+  border: 2px solid black;
+  background-color: #4caf50;
+}
+
+#submit {
+  position: relative;
+  top: -20px;
+  border: none;
+  color: white;
+  padding: 45px 55px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  margin: 4px 2px;
+  cursor: pointer;
+  float: right;
+  border: 1px solid black;
 }

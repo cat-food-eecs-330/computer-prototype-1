@@ -33,3 +33,18 @@ function showLast() {
         document.getElementById(LLS).style.display = "";
     }
 }
+
+function makeAm() {
+  document.getElementById('time-zone').innerHTML = 'AM';
+}
+
+function makePm() {
+  document.getElementById('time-zone').innerHTML = 'PM';
+}
+function fillReminder() {
+  x = document.getElementById('input-location').value
+  y = document.getElementById('input-time').value
+  z = document.getElementById('time-zone').innerHTML
+  rem = document.getElementById('the-reminder')
+  rem.innerHTML = "You will be reminded about " + x + " at " + y + " " + z
+}
