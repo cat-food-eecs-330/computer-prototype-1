@@ -39,6 +39,21 @@
             <div class="hours">7:00AM - 8:00PM</div>
         </div></a>
     </div>
+    <p class="reminders">
+      Reminders
+    </p>
+    <div   class="input-rem">
+      <p>The location: <input id="input-location" type="text" placeholder="Plex" value=""></input></p>
+<div class="dropdown">
+      <p id="input-2">The time:<input  id="input-time" type="text" placeholder="10:00" value=""></input> <span href="locale.html" id="time-zone">AM</span>
+      <div class="dropdown-content">
+        <p onclick='makeAm()'>AM</p>
+        <p onclick='makePm()'>PM</p>
+      </div> </p>
+    </div>
+    <button id="submit" onclick="fillReminder()">Submit</button>
+    <p id="the-reminder">  </p>
+    </div>
 
     <div class="navigation-bar">
 
