@@ -1,10 +1,10 @@
 <html>
 <header>
-    <title>Hour</title>
+    <title>Hours</title>
     <link rel="stylesheet" type="text/css" href="hour.css" />
     <link rel="stylesheet" type="text/css" href="common.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="hour.js"></script>
+    <script src="locale.js"></script>
 </header>
 <body>
     <div class="head-bar-spacer"></div>
@@ -12,28 +12,28 @@
         <div class="header-text">Cat Food</div>
     </div>
 
-    <p class="page-name">Locales and Hours</p>
+    <p id="page-name">Locales and Hours</p>
 
     <div class="vertical-menu">
-        <a href="plex.html"><div class="list_item">
+        <a href="locale.html" onclick="selectLocale(0)"><div class="list_item">
             <div class="locale_name">Plex</div>
             <div class="open">Open</div>
             <div class="hours">7:00AM - 12:00AM</div>
         </div></a>
 
-        <a href="#"><div class="list_item">
+        <a href="locale.html" onclick="selectLocale(1)"><div class="list_item">
             <div class="locale_name">Sargent</div>
             <div class="open">Open</div>
             <div class="hours">7:00AM - 11:30PM</div>
         </div></a>
 
-        <a href="#"><div class="list_item">
+        <a href="locale.html" onclick="selectLocale(2)"><div class="list_item">
             <div class="locale_name">Allison</div>
             <div class="closed">Closed</div>
             <div class="hours">7:00AM - 8:00PM</div>
         </div></a>
 
-        <a href="#"><div class="list_item">
+        <a href="locale.html" onclick="selectLocale(3)"><div class="list_item">
             <div class="locale_name">Hinman</div>
             <div class="closed">Closed</div>
             <div class="hours">7:00AM - 8:00PM</div>
@@ -59,7 +59,4 @@
     </div>
 
 </body>
-<script>
-showLast()
-</script>
 </html>

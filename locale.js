@@ -1,3 +1,59 @@
+var locales = [
+    {
+        locale_name : "Plex",
+        menu: {
+            "05/29/2019": [0,1,3,4,7],
+            "05/30/2019": [2,3,4,5,6],
+            "05/31/2019": [0,1,2,5,6,8],
+            "06/01/2019": [1,3,4,6,7],
+            "06/02/2019": [0,1,6,7,8],
+            "06/03/2019": [1,2,4,5,6,8]
+        }
+    },
+    {
+        locale_name : "Sargent",
+        menu: {
+            "05/29/2019": [1,3,4,6,7],
+            "05/30/2019": [0,1,3,4,7],
+            "05/31/2019": [1,3,4,6,7],
+            "06/01/2019": [1,2,4,5,6,8],
+            "06/02/2019": [0,1,2,3,4,5,6,7,8],
+            "06/03/2019": [0,1,2,5,6,8]
+        }
+    },
+    {
+        locale_name : "Allison",
+        menu: {
+            "05/29/2019": [0,1,2,3,4,5,6,7,8],
+            "05/30/2019": [1,2,4,5,6,8],
+            "05/31/2019": [0,1,2,5,6,8],
+            "06/01/2019": [0,1,3,4,7],
+            "06/02/2019": [1,2,4,5,6,8],
+            "06/03/2019": [0,1,6,7,8]
+        }
+    },
+    {
+        locale_name : "Hinman",
+        menu: {
+            "05/29/2019": [0,1,3,4,7],
+            "05/30/2019": [0,1,6,7,8],
+            "05/31/2019": [0,1,3,4,7],
+            "06/01/2019": [0,1,2,5,6,8],
+            "06/02/2019": [1,3,4,6,7],
+            "06/03/2019": [1,2,4,5,6,8]
+        }
+    }
+];
+
+function selectLocale(id) {
+    localStorage.locale = id
+}
+
+function buildLocalePage(id) {
+    var locale_name = document.getElementById("page-name");
+    locale_name.innerHTML = locales[id].locale_name;
+}
+
 function buildMenuList(menu_foods) {
     var menu = document.getElementById("menu");
     var User_prefs = getUserPrefs();
@@ -36,20 +92,17 @@ function getMyDateValue(e) {
    	  // Format the date as needed
    	  // Currently mm/dd/yyyy
       var date = dateArr[1] + '/' + dateArr[2] + '/' + dateArr[0];
+      var locale = parseInt(localStorage.locale)
 
-      if (date == "05/29/2019") {
-          buildMenuList([0, 3, 4, 5, 8])
-      }
-      if (date == "05/30/2019") {
-          buildMenuList([1, 2, 4, 5, 6])
-      }
-      if (date == "05/31/2019") {
-          buildMenuList([1, 3, 6, 7, 8])
-      }
+      buildMenuList(locales[locale].menu[date])
     }
 }
 // Add an event listener to my date field
 
 function init() {
     document.getElementById("calendar").addEventListener("blur", getMyDateValue)
+
+    var locale = parseInt(localStorage.locale)
+    buildLocalePage(locale)
+    buildMenuList(locales[locale].menu["05/29/2019"])
 }
