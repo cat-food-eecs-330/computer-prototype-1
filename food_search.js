@@ -21,6 +21,20 @@ function boxFilter(array, filter) {
     }
 }
 
+function showDropDown() {
+    var dropdown = document.getElementById("filter_dropdown")
+    if (dropdown.style.display === "none") {
+        dropdown.style.display = "block";
+    } else {
+        dropdown.style.display = "none";
+    }
+}
+
+function hideDropDown() {
+    var dropdown = document.getElementById("filter_dropdown")
+    dropdown.style.display = "none";
+}
+
 var filters = ["vegan", "vegetarian", "no-dairy", "pasta", "meat", "dessert"]
 
 function buildFoodsList() {
@@ -46,12 +60,14 @@ function buildFoodsList() {
                 fav = 1
             }
 
+            var availability = check_available(i)
             var list_item_div = document.createElement('div');
             list_item_div.classList.add('list_item');
             list_item_div.innerHTML = `
             <img src="img/heart_${fav}.png" onclick="call_toggle_fav(${food_ids[i]})" id="heart"></img>
             <img src="${foods[food_ids[i]].img_src}"></img>
             <div class="food_name">${foods[food_ids[i]].food_name}</div>
+            <div class="availability">${availability}</div>
             `;
 
             foods_list.appendChild(list_item_div);

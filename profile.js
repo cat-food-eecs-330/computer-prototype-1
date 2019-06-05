@@ -18,6 +18,7 @@ function buildPrefList() {
     if (foodsList != null) {
         foodsList.innerHTML = "";
         for (var i=0; i<User_prefs.length; i++) {
+            var availability = check_available(User_prefs[i])
             var list_item_a = document.createElement('a');
             list_item_a.href = "#";
 
@@ -26,6 +27,7 @@ function buildPrefList() {
                 <img src="${foods[User_prefs[i]].img_src}"></img>
                 <div class="food_name">${foods[User_prefs[i]].food_name}</div>
                 <img id="remove_icon" src="img/remove.png" onclick="call_toggle_fav(${User_prefs[i]})"></img>
+                <div class="availability">${availability}</div>
             </div>
             `;
 

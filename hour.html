@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="hour.css" />
     <link rel="stylesheet" type="text/css" href="common.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="locale_list.js"></script>
     <script src="locale.js"></script>
 </header>
 <body>
@@ -40,19 +41,22 @@
         </div></a>
     </div>
     <p class="reminders">
-      Reminders
+        Reminders
     </p>
-    <div   class="input-rem">
-      <p>The location: <input id="input-location" type="text" placeholder="Plex" value=""></input></p>
-<div class="dropdown">
-      <p id="input-2">The time:<input  id="input-time" type="text" placeholder="10:00" value=""></input> <span href="locale.html" id="time-zone">AM</span>
-      <div class="dropdown-content">
-        <p onclick='makeAm()'>AM</p>
-        <p onclick='makePm()'>PM</p>
-      </div> </p>
-    </div>
-    <button id="submit" onclick="fillReminder()">Submit</button>
-    <p id="the-reminder">  </p>
+    <div class="input-rem">
+        <p>Location: <input id="input-location" type="text" placeholder="Plex" value=""></input></p>
+        <div class="dropdown">
+            <p id="input-2">Time:
+                <input  id="input-time" type="text" placeholder="10:00" value=""></input>
+                <span href="locale.html" id="time-zone">AM</span>
+                <div class="dropdown-content">
+                    <p onclick='makeAm()'>AM</p>
+                    <p onclick='makePm()'>PM</p>
+                </div>
+            </p>
+        </div>
+        <button id="submit" onclick="fillReminder()">Submit</button>
+        <p id="the-reminder">  </p>
     </div>
 
     <div class="navigation-bar">

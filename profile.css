@@ -111,3 +111,12 @@ a {
     font-weight: normal;
     width: 50%;
 }
+
+.availability {
+    float: left;
+    font-size: 40px;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-weight: normal;
+    width: 50%;
+}

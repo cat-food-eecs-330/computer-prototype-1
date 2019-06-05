@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="common.css" />
     <link rel="stylesheet" type="text/css" href="food_search.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="locale_list.js"></script>
     <script src="foods.js"></script>
     <script src="food_search.js"></script>
 </header>
@@ -37,20 +38,24 @@
         <span class="checkmark"></span>
     </label>
 
-    <label class="filters">Pasta
-        <input type="checkbox" id="pasta" onclick="buildFoodsList()">
-        <span class="checkmark"></span>
-    </label>
+    <div id="filter_dropdown_button" onclick="showDropDown()" onmouseleave="hideDropDown()"> More Filters ⯆
+        <div id="filter_dropdown" style="display: none;">
+            <label class="filters">Pasta
+                <input type="checkbox" id="pasta" onclick="buildFoodsList()">
+                <span class="checkmark"></span>
+            </label>
 
-    <label class="filters">Meaty
-        <input type="checkbox" id="meat" onclick="buildFoodsList()">
-        <span class="checkmark"></span>
-    </label>
+            <label class="filters">Meaty
+                <input type="checkbox" id="meat" onclick="buildFoodsList()">
+                <span class="checkmark"></span>
+            </label>
 
-    <label class="filters">Dessert
-        <input type="checkbox" id="dessert" onclick="buildFoodsList()">
-        <span class="checkmark"></span>
-    </label>
+            <label class="filters">Dessert
+                <input type="checkbox" id="dessert" onclick="buildFoodsList()">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+    </div>
 
     <div class="vertical-menu" id="foods_list">
 

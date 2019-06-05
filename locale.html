@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="locale.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="foods.js"></script>
+    <script src="locale_list.js"></script>
     <script src="locale.js"></script>
 </header>
 <body>
@@ -17,8 +18,12 @@
     <p id="page-name"></p>
 
     <input type="date" id="calendar" class="dropbtn" required="required"
-       value="2019-05-29">
+       value="2019-05-29" onchange="update_page()">
     </input>
+
+    <div id="hours">
+
+    </div>
 
     <div class="vertical-menu" id="menu">
 
