@@ -17,7 +17,7 @@ var foods = [
     {
         food_name : "Cookies",
         img_src : "img/cookies.png",
-        tags: ["dessert"]
+        tags: ["dessert", "vegetarian"]
     },
     {
         food_name : "Beef",
@@ -79,6 +79,23 @@ function toggle_fav(id) {
         localStorage.Eve_prefs = JSON.stringify(prefs)
     }
 }
+
+function check_available(food_id) {
+    var locales_with_food = []
+    for (var i=0; i<locales.length; i++) {
+        if (locales[i].menu["05/29/2019"].includes(food_id)) {
+            locales_with_food.push(locales[i].locale_name)
+        }
+    }
+    if (locales_with_food.length == 0) {
+        return `Currently unavailable.`
+    }
+
+    var locales_with_food_str = locales_with_food.join(", ")
+    console.log(locales_with_food_str)
+    return `Available at: </b> ${locales_with_food_str}`
+}
+
 
 
 

@@ -1,50 +1,3 @@
-var locales = [
-    {
-        locale_name : "Plex",
-        menu: {
-            "05/29/2019": [0,1,3,4,7],
-            "05/30/2019": [2,3,4,5,6],
-            "05/31/2019": [0,1,2,5,6,8],
-            "06/01/2019": [1,3,4,6,7],
-            "06/02/2019": [0,1,6,7,8],
-            "06/03/2019": [1,2,4,5,6,8]
-        }
-    },
-    {
-        locale_name : "Sargent",
-        menu: {
-            "05/29/2019": [1,3,4,6,7],
-            "05/30/2019": [0,1,3,4,7],
-            "05/31/2019": [1,3,4,6,7],
-            "06/01/2019": [1,2,4,5,6,8],
-            "06/02/2019": [0,1,2,3,4,5,6,7,8],
-            "06/03/2019": [0,1,2,5,6,8]
-        }
-    },
-    {
-        locale_name : "Allison",
-        menu: {
-            "05/29/2019": [0,1,2,3,4,5,6,7,8],
-            "05/30/2019": [1,2,4,5,6,8],
-            "05/31/2019": [0,1,2,5,6,8],
-            "06/01/2019": [0,1,3,4,7],
-            "06/02/2019": [1,2,4,5,6,8],
-            "06/03/2019": [0,1,6,7,8]
-        }
-    },
-    {
-        locale_name : "Hinman",
-        menu: {
-            "05/29/2019": [0,1,3,4,7],
-            "05/30/2019": [0,1,6,7,8],
-            "05/31/2019": [0,1,3,4,7],
-            "06/01/2019": [0,1,2,5,6,8],
-            "06/02/2019": [1,3,4,6,7],
-            "06/03/2019": [1,2,4,5,6,8]
-        }
-    }
-];
-
 function selectLocale(id) {
     localStorage.locale = id
 }
@@ -52,6 +5,11 @@ function selectLocale(id) {
 function buildLocalePage(id) {
     var locale_name = document.getElementById("page-name");
     locale_name.innerHTML = locales[id].locale_name;
+}
+
+function buildHours(date, id) {
+    var hours = document.getElementById("hours");
+    hours.innerHTML = locales[id].hours[date]
 }
 
 function buildMenuList(menu_foods) {
@@ -84,27 +42,22 @@ function call_toggle_fav(id, menu_foods) {
     buildMenuList(menu_foods);
 }
 
-function getMyDateValue(e) {
-    // Get the date value from the srcElement of the event
-    var dateArr = e.srcElement.value.split('-');
-    // Make sure we are dealing with an array of at least length 2
+function update_page() {
+    var dateArr = document.getElementById("calendar").value.split('-');
     if (dateArr.length > 1) {
-   	  // Format the date as needed
-   	  // Currently mm/dd/yyyy
-      var date = dateArr[1] + '/' + dateArr[2] + '/' + dateArr[0];
-      var locale = parseInt(localStorage.locale)
-
-      buildMenuList(locales[locale].menu[date])
+        var date = dateArr[1] + '/' + dateArr[2] + '/' + dateArr[0];
+        var locale = parseInt(localStorage.locale)
+        
+        buildMenuList(locales[locale].menu[date])
+        buildHours(date, locale)
     }
 }
-// Add an event listener to my date field
 
 function init() {
-    document.getElementById("calendar").addEventListener("blur", getMyDateValue)
-
     var locale = parseInt(localStorage.locale)
     buildLocalePage(locale)
     buildMenuList(locales[locale].menu["05/29/2019"])
+    buildHours("05/29/2019", locale)
 }
 
 function makeAm() {
