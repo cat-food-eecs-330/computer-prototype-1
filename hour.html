@@ -44,14 +44,14 @@
         Reminders
     </p>
     <div class="input-rem">
-        <p>Location: <input id="input-location" type="text" placeholder="Plex" value=""></input></p>
+        <p>Location: <input id="input-location" type="text" placeholder="i.e. Plex" value=""></input></p>
         <div class="dropdown">
             <p id="input-2">Time:
-                <input  id="input-time" type="text" placeholder="10:00" value=""></input>
+                <input  id="input-time" type="text" placeholder="i.e. 10:00" value=""></input>
                 <span href="locale.html" id="time-zone">AM</span>
                 <div class="dropdown-content">
                     <p onclick='makeAm()'>AM</p>
-                    <p onclick='makePm()'>PM</p>
+                    <p id="t" onclick='makePm()'>PM</p>
                 </div>
             </p>
         </div>

@@ -64,7 +64,7 @@ a {
 }
 .reminders {
   position: relative;
-  top: -570px;
+  top: -600px;
   color: blueviolet;
   font-size: 100px;
   margin-top: 15px;
@@ -74,7 +74,7 @@ a {
 
 .input-rem {
   position: relative;
-  top: -600px;
+  top: -660px;
   color: black;
   font-size: 60px;
   margin-top: 15px;
@@ -113,9 +113,13 @@ a {
   position: relative;
   float: right;
   top: -75px;
-  margin-right: 5px;
+  margin-right: 15px;
+  margin-left: 0px;
   line-height: 5px;
+  margin-top: 0px;
+  margin-block-end: 0em;
 }
+
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -126,7 +130,7 @@ a {
   font-size: 60px;
   margin-right: 0px;
   padding-right: 0px;
-  width: 600px;
+  width: 70%;
 }
 
 #input-time {
@@ -134,7 +138,7 @@ a {
   font-size: 60px;
   margin-right: 0px;
   padding-right: 0px;
-  width: 600px
+  width: 70%;
 }
 
 #time-zone {
@@ -143,8 +147,8 @@ a {
 }
 
 #submit {
-  position: relative;
-  top: -20px;
+  position: fixed;
+  top: 80%;
   border: none;
   color: white;
   padding: 45px 55px;
@@ -155,5 +159,11 @@ a {
   margin: 4px 2px;
   cursor: pointer;
   float: right;
-  border: 1px solid black;
+  right: 120px;
+  margin-right: 0px;
+  background-color: #4caf50;
+}
+#the-reminder {
+  top: 100px;
+  width: 60%;
 }
