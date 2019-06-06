@@ -1,37 +1,37 @@
 var foods = [
     {
         food_name : "Burger",
-        img_src : "img/burger.png",
+        img_src : "img/burger.jpeg",
         tags: ["meat", "no-dairy"]
     },
     {
         food_name : "Pizza",
-        img_src : "img/pizza.png",
+        img_src : "img/pizza.jpg",
         tags: ["meat", "pasta"]
     },
     {
         food_name : "Taco",
-        img_src : "img/taco.png",
+        img_src : "img/taco.jpg",
         tags: ["meat", "no-dairy"]
     },
     {
         food_name : "Cookies",
-        img_src : "img/cookies.png",
+        img_src : "img/cookies.jpg",
         tags: ["dessert", "vegetarian"]
     },
     {
         food_name : "Beef",
-        img_src : "img/beef.png",
+        img_src : "img/beef.jpeg",
         tags: ["meat", "no-dairy"]
     },
     {
         food_name : "Salad",
-        img_src : "img/salad.png",
+        img_src : "img/salad.jpeg",
         tags: ["vegetarian", "vegan", "no-dairy"]
     },
     {
         food_name : "Spaghetti and Meatballs",
-        img_src : "img/spaghetti.png",
+        img_src : "img/spaghetti.jpg",
         tags: ["meat", "pasta", "no-dairy"]
     },
     {
