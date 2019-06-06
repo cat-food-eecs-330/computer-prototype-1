@@ -47,7 +47,7 @@ function update_page() {
     if (dateArr.length > 1) {
         var date = dateArr[1] + '/' + dateArr[2] + '/' + dateArr[0];
         var locale = parseInt(localStorage.locale)
-        
+
         buildMenuList(locales[locale].menu[date])
         buildHours(date, locale)
     }
@@ -72,5 +72,8 @@ function fillReminder() {
   y = document.getElementById('input-time').value
   z = document.getElementById('time-zone').innerHTML
   rem = document.getElementById('the-reminder')
-  rem.innerHTML = "You will be reminded about " + x + " at " + y + " " + z
+  if (x != "" && y != "") {
+    rem.innerHTML = "You will be reminded about " + x + " at " + y + " " + z
+  }
+
 }
